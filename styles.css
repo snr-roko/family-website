@@ -22,7 +22,6 @@ header div {
   align-items: center;
 }
 
-
 header img {
   height: 40px;
   margin-right: 10px;
@@ -131,7 +130,6 @@ footer {
   padding: 10px;
   font-weight: 600;
   width: 100%;
-
 }
 
 /* Home Main Section Styles */
@@ -207,4 +205,56 @@ footer {
 .testimonial .author {
   margin-top: 1em;
   font-weight: 700;
+}
+
+/* Media Queries for Phone Styling */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  .home-main {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  #home-image-section,
+  #core-value,
+  #testimonial,
+  .core-value-detail,
+  .testimonial {
+    grid-column: 1 / -1;
+  }
+
+  #home-image-section {
+    font-size: 1.5em;
+  }
+
+  #core-value,
+  #testimonial {
+    font-size: 1.2em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  form {
+    padding: 1em;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
 }
